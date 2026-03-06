@@ -4,20 +4,50 @@ export default function Header() {
 
     return (
         <header>
-            <nav>
-                <a href="#">
-                    <img src={imgLogo} alt="" />
-                </a>
-                <a href="#">CHARACTERS</a>
-                <a href="#">COMICS</a>
-                <a href="#">MOVIES</a>
-                <a href="#">TV</a>
-                <a href="#">GAMES</a>
-                <a href="#">COLLECTIBLES</a>
-                <a href="#">VIDEOS</a>
-                <a href="#">FANS</a>
-                <a href="#">NEWS</a>
-                <a href="#">SHOP</a>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container">
+                    <a className="navbar-brand" href="#">
+                        <img src={imgLogo} alt="" />
+                    </a>
+
+                    <div>
+                        <ul className="navbar-nav">
+
+                            <li className="nav-item">
+                                <a className="nav-link" aria-current="page" href="#">CHARACHTER</a>
+                            </li>
+
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">COMICS</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">MOVIES</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">TV</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">GAMES</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">COLLECTIBLES</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">VIDEOS</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">FANS</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">NEWS</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">SHOP</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
     )

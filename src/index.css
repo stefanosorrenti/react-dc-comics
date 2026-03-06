@@ -2,7 +2,34 @@
 @import url('bootstrap');
 
 
+/*--------GENERICS--------*/
+* {
+    font-family: 'Open Sans Variable', sans-serif;
+}
 
 body {
     background-color: rgb(240, 231, 231);
 }
+
+/*--------UTILITY--------*/
+
+/*--------HEADER--------*/
+
+/*Navbar*/
+a.navbar-brand>img {
+    width: 70px;
+}
+
+ul.navbar-nav>li {
+    font-size: 13px;
+    font-weight: bold;
+    color: red;
+}
+
+/*--------MAIN--------*/
+
+
+/*--------ASIDE--------*/
+
+
+/*--------FOOTER--------*/
