@@ -1,3 +1,10 @@
+import facebookIco from "../assets/img/footer-facebook.png"
+import youtubeIco from "../assets/img/footer-youtube.png"
+import twitterIco from "../assets/img/footer-twitter.png"
+import pinterestIco from "../assets/img/footer-pinterest.png"
+import findShopIco from "../assets/img/footer-periscope.png"
+
+
 export default function Footer() {
 
 
@@ -54,7 +61,24 @@ export default function Footer() {
                 <div className="footer-contacts">
                     <button>SIGN-UP NOW!</button>
 
-                    <div className="social-media"></div>
+                    <div className="social-media">
+                        <a href="#">FOLLOW US</a>
+                        <a href="#">
+                            <img src={facebookIco} alt="Facebook Icon" />
+                        </a>
+                        <a href="#">
+                            <img src={twitterIco} alt="Twitter Icon" />
+                        </a>
+                        <a href="#">
+                            <img src={youtubeIco} alt="Youtube Icon" />
+                        </a>
+                        <a href="#">
+                            <img src={pinterestIco} alt="Pinyerest Icon" />
+                        </a>
+                        <a href="#">
+                            <img src={findShopIco} alt="Find Comic Shop icon" />
+                        </a>
+                    </div>
 
                 </div>
             </div>
