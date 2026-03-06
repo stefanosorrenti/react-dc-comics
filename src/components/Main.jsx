@@ -5,7 +5,9 @@ export default function Main() {
 
     return (
         <main>
-            <span>{temponaryText}</span>
+            <div className="container ">
+                <span>{temponaryText}</span>
+            </div>
         </main>
     )
 }
