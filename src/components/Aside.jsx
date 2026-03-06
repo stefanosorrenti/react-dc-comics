@@ -12,33 +12,47 @@ export default function Aside() {
 
     return (
         <aside>
-            <nav>
-                <a href="#">
-                    <span><img src={comicsIco} alt="Comics Icon" /></span>
-                    DIGITAL COMICS
-                </a>
+            <div className="container">
+                <ul className="nav py-5 justify-content-evenly align-items-center">
 
-                <a href="#">
-                    <span><img src={merchIco} alt="Merchandise Icon" /></span>
-                    DC MERCHANDISE
-                </a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">
+                            <span><img src={comicsIco} alt="Comics Icon" /></span>
+                            DIGITAL COMICS
+                        </a>
+                    </li>
 
-                <a href="#">
-                    <span><img src={subIco} alt="Subscription Icon" /></span>
-                    SUBSCRIPTION
-                </a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">
+                            <span><img src={merchIco} alt="Merchandise Icon" /></span>
+                            DC MERCHANDISE
+                        </a>
 
-                <a href="#">
-                    <span><img src={gpsIco} alt="Find Comic Shop Icon" /></span>
-                    COMIC SHOP LOCATOR
-                </a>
+                    </li>
 
-                <a href="#">
-                    <span><img src={dcVisaIco} alt="DC VISA ICON" style={{width: '50px'}} /></span>
-                    DC POWER VISA
-                </a>
 
-            </nav>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">
+                            <span><img src={subIco} alt="Subscription Icon" /></span>
+                            SUBSCRIPTION
+                        </a>
+                    </li>
+
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">
+                            <span><img src={gpsIco} alt="Find Comic Shop Icon" /></span>
+                            COMIC SHOP LOCATOR
+                        </a>
+                    </li>
+
+                    <li className="nav-item">
+                        <a className="text-decoration-none" href="#">
+                            <span><img src={dcVisaIco} alt="DC VISA ICON"/></span>
+                            DC POWER VISA
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </aside>
     )
 }

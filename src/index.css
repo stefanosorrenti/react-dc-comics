@@ -15,6 +15,9 @@ main {
     background-color:#1c1c1c ;
 }
 
+img {
+    max-width: 100%;
+}
 /*--------UTILITY--------*/
 
 /*--------HEADER--------*/
@@ -30,10 +33,20 @@ ul.navbar-nav>li {
     color: red;
 }
 
-/*--------MAIN--------*/
-
 
 /*--------ASIDE--------*/
+aside {
+    background-color: #0282f9;
+}
 
+ul.nav span {
+    width: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    
+}
 
+ul.nav a {
+    color: white;
+}
 /*--------FOOTER--------*/
