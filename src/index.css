@@ -11,6 +11,10 @@ body {
     background-color: rgb(240, 231, 231);
 }
 
+main {
+    background-color:#1c1c1c ;
+}
+
 /*--------UTILITY--------*/
 
 /*--------HEADER--------*/

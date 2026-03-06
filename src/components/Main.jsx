@@ -4,8 +4,8 @@ export default function Main() {
 
 
     return (
-        <main>
-            <div className="container ">
+        <main className="py-5">
+            <div className="container fs-4 fw-bold text-white">
                 <span>{temponaryText}</span>
             </div>
         </main>
