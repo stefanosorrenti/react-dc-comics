@@ -44,7 +44,8 @@ ul.navbar-nav>li {
 
 .jumbotron {
     background-image: url(./assets/img/jumbotron.jpg);
-    min-height: 500px;
+    min-height: 300px;
+    max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 
