@@ -13,10 +13,11 @@ export default function Footer() {
         <footer>
             <div className="container">
                 <div className="row">
-                    <div className="col-3">
-                        <span>
+                    <div className="col-2 my-5">
+                        <span className="d-block mb-3">
                             DC COMICS
-                            <ul>
+                        </span>
+                            <ul className="list-group list-group-flush text-white">
                                 <li>Characters</li>
                                 <li>Comics</li>
                                 <li>Movies</li>
@@ -25,20 +26,22 @@ export default function Footer() {
                                 <li>Videos</li>
                                 <li>News</li>
                             </ul>
-                        </span>
 
 
-                        <span>
+                        <span className="d-block my-3">
                             SHOP
+                        </span>
+                        <ul className="list-group text-white">
                             <li>Shop DC</li>
                             <li>Shop DC Collectibles</li>
-                        </span>
+                        </ul>
 
                     </div>
-                    <div className="col-3">
-                        <span>
+                    <div className="col-2 my-5">
+                        <span className="d-block mb-3">
                             DC
-                            <ul>
+                        </span>
+                            <ul className="list-group text-white">
                                 <li>Terms Of Use</li>
                                 <li>Privacy policy (New)</li>
                                 <li>Ad Choices</li>
@@ -51,31 +54,31 @@ export default function Footer() {
                                 <li>Shop Help</li>
                                 <li>Contact Us</li>
                             </ul>
-                        </span>
 
                     </div>
 
-                    <div className="col-3">
-                        <span>
+                    <div className="col-2 my-5">
+                        <span className="d-block mb-3">
                             SITES
-                            <ul>
+                        </span>
+                            <ul className="list-group text-white">
                                 <li>DC</li>
                                 <li>MAD Magazine</li>
                                 <li>DC Kids</li>
                                 <li>DC Universe</li>
                                 <li>DC Power Visa</li>
                             </ul>
-                        </span>
 
                     </div>
 
-                    <div className="col-3">
-                        <img src={dcBgLogo} alt="" />
+                    <div className="col-6">
+                        
                     </div>
                 </div>
 
             </div>
-            <div className="footer-contacts py-5">
+            
+            <div className="footer-contacts py-4">
                 <div className="container d-flex justify-content-between align-items-center">
                     <button>SIGN-UP NOW!</button>
 

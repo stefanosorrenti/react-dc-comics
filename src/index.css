@@ -63,15 +63,30 @@ footer {
 
 footer span {
     color: white;
+    font-weight: bold;
+    font-size: larger;
+
 }
 
+footer ul > li {
+    list-style: none;
+    color: gray;
+    font-size: small;
+}
 .footer-contacts {
     background-color: #303030;
+    
     
 
 
 }
 
+footer div.col-6 {
+    background-image: url(./assets/img/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 footer button {
     background-color: transparent;
     color: white;
