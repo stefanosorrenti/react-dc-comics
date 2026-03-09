@@ -1,8 +1,4 @@
-
-
-export default function Main() {
-    const temponaryText = '--> Content goes here <--'
-    const comics = [
+const comics = [
   {
     id: 1,
     title: "Action Comics #1000: The Deluxe Edition",
@@ -157,11 +153,4 @@ export default function Main() {
   },
 ];
 
-    return (
-        <main className="py-5">
-            <div className="container fs-4 fw-bold text-white">
-                <span>{temponaryText}</span>
-            </div>
-        </main>
-    )
-}
+export default comics
