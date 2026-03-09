@@ -35,16 +35,32 @@ ul.navbar-nav>li {
 
 }
 
+a.nav-link.p-2:hover {
+    color: #0282f9;
+}
 .selected {
     color: #0282f9;
-    border-bottom: 5px solid #0282f9;
+}
+
+.selected::before {
+    content: '';
+    position: absolute;
+    top: 175%;
+    left: 50%;
+    height: 5px;
+    width: 100%;
+    background-color: #0282f9;
+    translate: -50%;
+
+
+
 }
 
 /*Jumbotron*/
 
 .jumbotron {
     background-image: url(./assets/img/jumbotron.jpg);
-    min-height: 300px;
+    min-height: 400px;
     max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,8 +98,9 @@ ul.nav a {
     position: absolute;
     top: -5%;
     left: 10%;
-    
+
 }
+
 /*Cards*/
 
 div.card>img {
@@ -103,12 +120,12 @@ p.text-white {
 }
 
 .load-more {
-    
+
     display: flex;
     justify-content: center;
 }
 
-.load-more > button {
+.load-more>button {
     font-weight: bold;
     padding: 8px 50px;
 }

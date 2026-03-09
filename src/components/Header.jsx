@@ -11,12 +11,12 @@ const navLinksTitle = ['charachter', 'comics', 'movies', 'tv', 'games', 'collect
                     </a>
 
                     <div>
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav p-0">
 
                         {navLinksTitle.map((linkTitle, index) => (
                             
                             <li key={index} className='nav-item'>
-                                <a className={index === 1?'nav-link selected':'nav-link' } aria-current="page" href="#">{linkTitle.toUpperCase()}</a>
+                                <a className={index === 1?'nav-link p-2 selected position-relative':'nav-link p-2' } aria-current="page" href="#">{linkTitle.toUpperCase()}</a>
                             </li>
 
                         ))}
