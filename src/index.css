@@ -35,6 +35,11 @@ ul.navbar-nav>li {
     
 }
 
+.selected {
+    color: #0282f9;
+    border-bottom: 5px solid #0282f9 ;
+}
+
 /*Jumbotron*/
 
 .jumbotron {

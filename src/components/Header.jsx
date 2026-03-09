@@ -1,7 +1,7 @@
 import imgLogo from "../assets/img/dc-logo.png"
 
 export default function Header() {
-
+const navLinksTitle = ['charachter', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop' ]
     return (
         <header>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -13,37 +13,13 @@ export default function Header() {
                     <div>
                         <ul className="navbar-nav">
 
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">CHARACHTER</a>
+                        {navLinksTitle.map((linkTitle, index) => (
+                            
+                            <li key={index} className='nav-item'>
+                                <a className={index === 1?'nav-link selected':'nav-link' } aria-current="page" href="#">{linkTitle.toUpperCase()}</a>
                             </li>
 
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">COMICS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">MOVIES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">TV</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">GAMES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">COLLECTIBLES</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">VIDEOS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">FANS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">NEWS</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">SHOP</a>
-                            </li>
+                        ))}
 
                         </ul>
                     </div>
