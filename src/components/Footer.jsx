@@ -7,6 +7,39 @@ import dcBgLogo from "../assets/img/dc-logo-bg.png"
 
 
 export default function Footer() {
+    const socialIcons = [
+        {
+            name: 'Facebook Icon',
+            src: facebookIco,
+
+        },
+
+        {
+            name: 'Twitter Icon',
+            src: twitterIco,
+
+        },
+
+        {
+            name: 'Youtube Icon',
+            src: youtubeIco,
+
+        },
+
+        {
+            name: 'Pintarest Icon',
+            src: pinterestIco,
+
+        },
+
+        {
+            name: 'Find Comic Shop icon',
+            src: findShopIco,
+
+        },
+
+
+    ]
 
 
     return (
@@ -17,15 +50,15 @@ export default function Footer() {
                         <span className="d-block mb-3">
                             DC COMICS
                         </span>
-                            <ul className="list-group list-group-flush text-white">
-                                <li>Characters</li>
-                                <li>Comics</li>
-                                <li>Movies</li>
-                                <li>TV</li>
-                                <li>Games</li>
-                                <li>Videos</li>
-                                <li>News</li>
-                            </ul>
+                        <ul className="list-group list-group-flush text-white">
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>TV</li>
+                            <li>Games</li>
+                            <li>Videos</li>
+                            <li>News</li>
+                        </ul>
 
 
                         <span className="d-block my-3">
@@ -41,19 +74,19 @@ export default function Footer() {
                         <span className="d-block mb-3">
                             DC
                         </span>
-                            <ul className="list-group text-white">
-                                <li>Terms Of Use</li>
-                                <li>Privacy policy (New)</li>
-                                <li>Ad Choices</li>
-                                <li>Advertising</li>
-                                <li>Jobs</li>
-                                <li>Subscriptions</li>
-                                <li>Talent Workshops</li>
-                                <li>CPSC Certificates</li>
-                                <li>Rates</li>
-                                <li>Shop Help</li>
-                                <li>Contact Us</li>
-                            </ul>
+                        <ul className="list-group text-white">
+                            <li>Terms Of Use</li>
+                            <li>Privacy policy (New)</li>
+                            <li>Ad Choices</li>
+                            <li>Advertising</li>
+                            <li>Jobs</li>
+                            <li>Subscriptions</li>
+                            <li>Talent Workshops</li>
+                            <li>CPSC Certificates</li>
+                            <li>Rates</li>
+                            <li>Shop Help</li>
+                            <li>Contact Us</li>
+                        </ul>
 
                     </div>
 
@@ -61,44 +94,37 @@ export default function Footer() {
                         <span className="d-block mb-3">
                             SITES
                         </span>
-                            <ul className="list-group text-white">
-                                <li>DC</li>
-                                <li>MAD Magazine</li>
-                                <li>DC Kids</li>
-                                <li>DC Universe</li>
-                                <li>DC Power Visa</li>
-                            </ul>
+                        <ul className="list-group text-white">
+                            <li>DC</li>
+                            <li>MAD Magazine</li>
+                            <li>DC Kids</li>
+                            <li>DC Universe</li>
+                            <li>DC Power Visa</li>
+                        </ul>
 
                     </div>
 
                     <div className="col-6">
-                        
+
                     </div>
                 </div>
 
             </div>
-            
+
             <div className="footer-contacts py-4">
                 <div className="container d-flex justify-content-between align-items-center">
                     <button>SIGN-UP NOW!</button>
 
                     <div className="social-media">
                         <a className="text-decoration-none fw-bold" href="#">FOLLOW US</a>
-                        <a href="#">
-                            <img src={facebookIco} alt="Facebook Icon" />
-                        </a>
-                        <a href="#">
-                            <img src={twitterIco} alt="Twitter Icon" />
-                        </a>
-                        <a href="#">
-                            <img src={youtubeIco} alt="Youtube Icon" />
-                        </a>
-                        <a href="#">
-                            <img src={pinterestIco} alt="Pinyerest Icon" />
-                        </a>
-                        <a href="#">
-                            <img src={findShopIco} alt="Find Comic Shop icon" />
-                        </a>
+
+                        {socialIcons.map((icon, index) => (
+
+                            <a key={index} href="#">
+                                <img src={icon.src} alt={icon.name} />
+                            </a>
+
+                        ))}
 
                     </div>
                 </div>
@@ -107,3 +133,6 @@ export default function Footer() {
         </footer>
     )
 }
+
+
+
