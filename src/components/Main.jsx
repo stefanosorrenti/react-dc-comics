@@ -158,29 +158,30 @@ export default function Main() {
   ];
 
   return (
-    <main className="py-5">
+    <main className="py-5 position-relative">
       <div className="container fs-4 fw-bold text-white">
 
         <span className="comics-tag">CURRENT SERIES</span>
-        <div className="row">
+        <div className="row row-gap-4">
 
           {comics.map(comic => (
-
             <div key={comic.id} className="col-12 col-md-6 col-lg-2">
-              <div className="card rounded-0 bg-transparent border border-0">
-                <img src={comic.thumb}
-                  className="card-img-top rounded-0" alt="Comics" />
 
-                <div className="card-body">
-                  <span className="card-title h6 text-white">{comic.title.toUpperCase()}</span>
+              <div className="card rounded-0 bg-transparent border border-0">
+                <img src={comic.thumb} alt="Comics" />
+                <div className="card-body p-0">
+                  <p className="card-text text-white mt-3">{comic.title.toUpperCase()}</p>
 
                 </div>
+
               </div>
             </div>
           ))}
 
         </div>
-        <button className="btn btn-primary">LOAD MORE</button>
+        <div className="load-more mt-4">
+          <button className="btn btn-primary rounded-0">LOAD MORE</button>
+        </div>
       </div>
     </main>
   )

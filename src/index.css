@@ -31,13 +31,13 @@ a.navbar-brand>img {
 ul.navbar-nav>li {
     font-size: 12px;
     font-weight: bold;
-    
-    
+
+
 }
 
 .selected {
     color: #0282f9;
-    border-bottom: 5px solid #0282f9 ;
+    border-bottom: 5px solid #0282f9;
 }
 
 /*Jumbotron*/
@@ -47,13 +47,13 @@ ul.navbar-nav>li {
     min-height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
 /*--------ASIDE--------*/
 aside {
     background-color: #0282f9;
-    
+
 }
 
 /*Aside list*/
@@ -75,12 +75,42 @@ ul.nav a {
 
 /*--------MAIN--------*/
 
-
+.comics-tag {
+    background-color: #0282f9;
+    padding: 10px;
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    
+}
 /*Cards*/
 
+div.card>img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+}
 
 
-   
+
+p.text-white {
+
+    font-size: small;
+    font-weight: lighter;
+
+}
+
+.load-more {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.load-more > button {
+    font-weight: bold;
+    padding: 8px 50px;
+}
 
 /*--------FOOTER--------*/
 
@@ -99,7 +129,7 @@ footer span {
 
 }
 
-footer ul > li {
+footer ul>li {
     list-style: none;
     color: gray;
     font-size: small;
@@ -108,8 +138,8 @@ footer ul > li {
 /*Footer contacts*/
 .footer-contacts {
     background-color: #303030;
-    
-    
+
+
 
 
 }
@@ -120,14 +150,16 @@ footer div.col-6 {
     background-size: cover;
     background-position: center;
 }
+
 footer button {
     background-color: transparent;
     color: white;
-    font-size: medium ;
-    font-weight:lighter;
+    font-size: medium;
+    font-weight: lighter;
     padding: 0.5rem;
-    border: 2px solid #0282f9 ;
+    border: 2px solid #0282f9;
 }
+
 footer button:hover {
     background-color: #0282f9;
 }
