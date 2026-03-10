@@ -1,3 +1,4 @@
+//IMPORTS
 import comicsIco from "../assets/img/buy-comics-digital-comics.png"
 import merchIco from "../assets/img/buy-comics-merchandise.png"
 import gpsIco from "../assets/img/buy-comics-shop-locator.png"
@@ -11,8 +12,11 @@ export default function Aside() {
 
 
     return (
+        /* ASIDE */
         <aside>
             <div className="container">
+
+                {/*ASIDE LINKS LIST*/}
                 <ul className="nav py-5 justify-content-evenly align-items-center">
 
                     <li className="nav-item">
@@ -51,7 +55,9 @@ export default function Aside() {
                             DC POWER VISA
                         </a>
                     </li>
+
                 </ul>
+                
             </div>
         </aside>
     )

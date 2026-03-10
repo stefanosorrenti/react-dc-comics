@@ -1,7 +1,9 @@
+//IMPORT
 import Card from "./Card"
 
 
 export default function Main() {
+  //DATA
   /* const temponaryText = '--> Content goes here <--' */
   const comics = [
     {
@@ -159,18 +161,23 @@ export default function Main() {
   ];
 
   return (
+    /* MAIN */
     <main className="py-5 position-relative">
       <div className="container fs-4 fw-bold text-white">
 
+        {/*COMICS TAG*/}
         <span className="comics-tag">CURRENT SERIES</span>
+
+        {/* DINAMIC COMICS CARDS */}
         <div className="row row-gap-4">
-
-          {comics.map(comic => (<Card title={comic.title} img={comic.thumb} key={comic.id}/> ))}
-
+          {comics.map(comic => (<Card title={comic.title} img={comic.thumb} key={comic.id}/> ))} {/*CARD COMPONENT WITH PROPS*/}
         </div>
+
+        {/* LOAD MORE BUTTON */}
         <div className="load-more mt-4">
           <button className="btn btn-primary rounded-0">LOAD MORE</button>
         </div>
+        
       </div>
     </main>
   )
