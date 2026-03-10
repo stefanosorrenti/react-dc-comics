@@ -162,7 +162,7 @@ footer ul>li {
 
 }
 
-footer div.col-6 {
+footer div.col-12:last-child {
     background-image: url(./assets/img/dc-logo-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,10 +181,30 @@ footer button {
 footer button:hover {
     background-color: #0282f9;
 }
-
+.footer-contacts > div {
+    flex-wrap: wrap;
+    gap:30px;
+}
 .social-media {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
 }
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:992px ) {
+    .comics-tag {
+        position: static;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    
+    .selected::before {
+        display: none;
+    }
+}
+

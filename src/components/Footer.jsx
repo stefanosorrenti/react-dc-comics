@@ -61,7 +61,7 @@ export default function Footer() {
         <footer>
             <div className="container">
                 <div className="row">
-                    <div className="col-2 my-5">
+                    <div className="col-12 col-md-6 col-lg-2 my-5">
 
                         <span className="d-block mb-3">
                             DC COMICS
@@ -83,7 +83,7 @@ export default function Footer() {
                         </ul>
 
                     </div>
-                    <div className="col-2 my-5">
+                    <div className="col-12 col-md-6 col-lg-2 my-5">
                         <span className="d-block mb-3">
                             DC
                         </span>
@@ -97,7 +97,7 @@ export default function Footer() {
 
                     </div>
 
-                    <div className="col-2 my-5">
+                    <div className="col-12 col-md-6 col-lg-2 my-5">
                         <span className="d-block mb-3">
                             SITES
                         </span>
@@ -110,7 +110,7 @@ export default function Footer() {
 
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-12 col-md-6 col-lg-6">
 
                     </div>
                 </div>
