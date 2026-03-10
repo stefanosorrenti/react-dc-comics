@@ -1,8 +1,8 @@
-import Card from "./Card";
+import Card from "./Card"
 
 
 export default function Main() {
-  const temponaryText = '--> Content goes here <--'
+  /* const temponaryText = '--> Content goes here <--' */
   const comics = [
     {
       id: 1,
@@ -165,9 +165,7 @@ export default function Main() {
         <span className="comics-tag">CURRENT SERIES</span>
         <div className="row row-gap-4">
 
-          {comics.map(comic => (
-            <Card img={comic.thumb} title={comic.title} />
-          ))}
+          {comics.map(comic => (<Card title={comic.title} img={comic.thumb} key={comic.id}/> ))}
 
         </div>
         <div className="load-more mt-4">

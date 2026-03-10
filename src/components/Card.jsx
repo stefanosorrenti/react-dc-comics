@@ -1,5 +1,6 @@
-export default function Card({title, img}) {
-    <>
+export default function Card({ title, img }) {
+
+    return (
         <div className="col-12 col-md-6 col-lg-2">
 
             <div className="card rounded-0 bg-transparent border border-0">
@@ -12,6 +13,6 @@ export default function Card({title, img}) {
             </div>
         </div>
 
+    )
 
-    </>
 }
