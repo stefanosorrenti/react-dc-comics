@@ -1,6 +1,7 @@
-export default function Card({ title, img }) {
+export default function Card({ title, img }) { /* PROPS */
 
     return (
+        /* SINGLE CARD MARKUP */
         <div className="col-12 col-md-6 col-lg-2">
 
             <div className="card rounded-0 bg-transparent border border-0">
