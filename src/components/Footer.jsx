@@ -41,23 +41,36 @@ export default function Footer() {
 
     ]
 
+    const dcComicsList = ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News']
+    const dcList = ['Terms Of Use',
+        'Privacy policy(New)',
+        'Ad Choices',
+        'Advertising',
+        'Jobs',
+        'Subscriptions',
+        'Talent Workshops',
+        'CPSC Certificates',
+        'Rates',
+        'Shop Help',
+        'Contact Us'
+    ]
+
+    const dcSitesList = ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa']
 
     return (
         <footer>
             <div className="container">
                 <div className="row">
                     <div className="col-2 my-5">
+
                         <span className="d-block mb-3">
                             DC COMICS
                         </span>
+
                         <ul className="list-group list-group-flush text-white">
-                            <li>Characters</li>
-                            <li>Comics</li>
-                            <li>Movies</li>
-                            <li>TV</li>
-                            <li>Games</li>
-                            <li>Videos</li>
-                            <li>News</li>
+                            {dcComicsList.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
                         </ul>
 
 
@@ -75,17 +88,11 @@ export default function Footer() {
                             DC
                         </span>
                         <ul className="list-group text-white">
-                            <li>Terms Of Use</li>
-                            <li>Privacy policy (New)</li>
-                            <li>Ad Choices</li>
-                            <li>Advertising</li>
-                            <li>Jobs</li>
-                            <li>Subscriptions</li>
-                            <li>Talent Workshops</li>
-                            <li>CPSC Certificates</li>
-                            <li>Rates</li>
-                            <li>Shop Help</li>
-                            <li>Contact Us</li>
+                            {dcList.map((item, index) => (
+
+                                <li key={index}>{item}</li>
+
+                            ))}
                         </ul>
 
                     </div>
@@ -95,11 +102,10 @@ export default function Footer() {
                             SITES
                         </span>
                         <ul className="list-group text-white">
-                            <li>DC</li>
-                            <li>MAD Magazine</li>
-                            <li>DC Kids</li>
-                            <li>DC Universe</li>
-                            <li>DC Power Visa</li>
+                            {dcSitesList.map((item, index) =>(
+                                <li key={index}>{item}</li>
+                                
+                            ))}
                         </ul>
 
                     </div>
