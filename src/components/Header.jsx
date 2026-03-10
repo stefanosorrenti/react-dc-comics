@@ -20,14 +20,14 @@ export default function Header() {
                     </a>
 
                     {/*NAVBAR DINAMUC BUTTON*/}
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
                     
                     {/*NAVBAR LINKS*/}
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
 
-                        <ul className="navbar-nav justify-content-end">
+                        <ul className="navbar-nav">
 
                             {navLinksTitle.map((linkTitle, index) => (  /*ADD DINAMIC LINK WITH MAP*/
 
